@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web con Johann</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Johann Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/temas.html">Temas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Más
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/preguntas.html">Preguntas</a></li>
+                                <li><a class="dropdown-item" href="pages/contactos.html">Contactos</a></li>
+                                <li><a class="dropdown-item" href="pages/sobre-mi.html">Sobre mí</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="caja">
+        <section class="contenedor">
+            <div>
+                <h2>Bienvenido a mi página web</h2>
+                <p>Esta es mi primera página creada con HTML usando el curso de Desarrollo Web. Veran algunas cosas
+                    sobre mí y algunos proyectos personales.</p>
+            </div>
+        </section>
+        <section class="contenedor2">
+            <div>
+                <article>
+                    <h2>Este es mi primer proyecto</h2>
+                    <p>Este es un proyecto que hice para el curso de Desarrollo Web, en el que vimos varias cosas como:
+                    </p>
+                    <ul class="lista">
+                        <li>Etiquetas</li>
+                        <li>Imagenes</li>
+                        <li>Enlaces</li>
+                        <li>Listas</li>
+                        <li>CSS</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="side-bar">
+            <div>
+                <article>
+                    <h2>Auto soñado</h2>
+                    <p>Es un auto deportivo que me gusta desde chiquito y espero conseguirlo algún dia.</p>
+                    <figure>
+                        <img src="img/ferrari.webp" alt="Auto deportivo">
+                        <figcaption>Foto de un Ferrari</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <section class="contenedor3">
+            <div>
+                <article class="galeria">
+                    <h2>Estos son los paises que quiero ir</h2>
+
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/japon.b.webp" class="d-block w-100 img-gal" alt="Japón">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Japón</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/españa.b.webp" class="d-block w-100 img-gal" alt="España">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>España</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/italia.b.webp" class="d-block w-100 img-gal" alt="Italia">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Italia</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/usa.b.webp" class="d-block w-100 img-gal" alt="Estados Unidos">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Estados Unidos</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Redes sociales</h2>
+        <div>
+            <a href="https://x.com/" target="_blank"><img src="img/logo-x.png" alt="X"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="img/logo-ig.png" alt="Instagram"></a>
+            <a href="https://youtube.com/" target="_blank"><img src="img/logo-yt.png" alt="Youtube"></a>
+        </div>
+        <p>Copyright © 2026 Derechos Reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
