@@ -237,6 +237,10 @@ footer div a img{
 .dropdown-menu{
     background-color: #bddeff;
 }
+.nav-link:hover{
+    box-shadow: 0 2px 5px black;
+    border-radius: 7px;
+}
 /* ---------------------------------------- */
 
 /* -------------GALERIA DE FOTOS----------- */
@@ -273,6 +277,51 @@ h5{
     font-size: 20px;
 }
 /* ----------------------------------------- */
+
+/* ------------Tarjetas de servicios----------*/
+
+.align{
+    text-align: center;
+}
+main section div.align h2{
+    font-size: 50px;
+}
+.caja-servi{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card{
+    border:#000000 solid 3px;
+}
+.card:hover{
+    box-shadow: 0 2px 5px #000000;
+    border:#050397 solid 3px;
+}
+.card-body{
+    background-color: #3a61fd; 
+}
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-texto);
+}
+
+.card-title{
+    text-align: center;
+    color: var(--color-texto);
+}
+
+.card-header{
+    text-align: center;
+    font-size: 25px;
+    color: var(--color-texto);
+    background-color: #0acdff;
+    border-bottom:#000000 solid 3px;
+}
+/* ------------------------------------------ */
 
 /* TRANSFORMACION DE PANTALLAS */
 
