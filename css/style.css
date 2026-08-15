@@ -23,7 +23,7 @@
 /* color-tarjetas es para el background-color de las secciones */
 /* --items es para el background-color de los elementos de la lista */
 
-/* --------------GENERALES---------- */
+/* --------------GENERALES------------ */
 body{
     background-color: var(--color-fondo);
     color:var(--color-texto);
@@ -47,6 +47,7 @@ h2{
     padding:5px;
     font-family: "Urbanist", sans-serif;
     text-align: center;
+    border-radius: 15px;
 }
 
 /* --------------HEADER------------- */
@@ -88,7 +89,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-    "contenedor contenedor side-bar"
+    "contenedor contenedor contenedor"
     "contenedor2 contenedor2 side-bar"
     "contenedor3 contenedor3 contenedor3"
     ;
@@ -97,6 +98,7 @@ main{
 
 .contenedor{
     grid-area: contenedor;
+    border:#181a3d solid 3px;
 }
 .contenedor2{
     grid-area: contenedor2;
@@ -106,6 +108,9 @@ main{
 }
 .side-bar{
     grid-area: side-bar;
+}
+.contenedor1{
+    grid-area: contenedor1;
 }
 
 /* El main de los temas con el uso del GRID */
@@ -114,32 +119,19 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-    "side-bar side-bar contenedor"
+    "side-bar side-bar contenedor1"
     "contenedor2 contenedor2 contenedor2"
     "contenedor3 contenedor3 contenedor3"
     ;
     gap: 20px;
 }
 
-.contenedor{
-    grid-area: contenedor;
-}
-.contenedor2{
-    grid-area: contenedor2;
-}
-.contenedor3{
-    grid-area: contenedor3;
-}
-.side-bar{
-    grid-area: side-bar;
-}
-
 /* ------------------------- */
 section{
     margin: 1rem;
-    border: 3px solid #000000;
-    background-color:var(--color-tarjetas);
-    border-radius: 10px;
+    background-color: var(--color-tarjetas);
+    border: #000000 solid 3px;
+    border-radius: 15px;
 
 }
 main section div p{
@@ -175,6 +167,48 @@ img{
     display: flex;
     flex-direction: column;
 }
+
+/* ------carta de presentación----- */
+.color-gradient{
+    background: linear-gradient(130deg, #0358d8, #1b1b81, #071d36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+strong{
+    color: #ffffff;
+}
+.inicio-text{
+    text-align: center;
+}
+
+.letras{
+    font-size: 25px;
+    font-weight: 500;
+    color: #dbd6d6;
+}
+
+section.contenedor div.card-presentacion h2{
+    color: #ffffff;
+    background-color: unset;
+    font-weight: 700;
+    font-size: 45px;
+}
+.boton-inicio{
+    font-size: 30px;
+    color: white;
+    background-color: #3772FF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.boton-inicio:hover{
+    background-color:#2c5ac5 ;
+    box-shadow: 0 2px 5px black;
+}
+
+/* -------------------------------- */
+
 /* --------------FOOTER------------- */
 footer{
     border-top: 2px solid #000000;
@@ -331,8 +365,8 @@ main section div.align h2{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-        "contenedor side-bar"
-        "contenedor2 contenedor2"
+        "contenedor contenedor"
+        "contenedor2 side-bar"
         "contenedor3 contenedor3 "
         ;
     }
@@ -367,7 +401,7 @@ main section div.align h2{
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "side-bar"
-        "contenedor"
+        "contenedor1"
         "contenedor2"
         "contenedor3"
         ;
