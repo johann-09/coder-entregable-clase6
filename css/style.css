@@ -25,7 +25,7 @@
 
 /* --------------GENERALES------------ */
 body{
-    background-color: var(--color-fondo);
+    background: linear-gradient(to bottom, #59b2f7, #040fa7);
     color: var(--color-texto);
     font-family: "Outfit", sans-serif;
 }
@@ -179,6 +179,7 @@ img{
 }
 
 /* ------carta de presentación----- */
+/* La sección completa */
 .color-gradient{
     background: linear-gradient(130deg, #0358d8, #1b1b81, #071d36);
     display: flex;
@@ -186,26 +187,29 @@ img{
     justify-content: center;
     align-items: center;
 }
+/* Palabras Importantes */
 strong{
     color: #ffffff;
 }
+/* La caja con el texto dentro y el enlace */
 .inicio-text{
     text-align: center;
     flex-wrap: wrap;
 }
-
+/* El texto */
 .letras{
     font-size: 25px;
     font-weight: 500;
     color: #dbd6d6;
 }
-
+/* Título de la card */
 section.contenedor div.card-presentacion h2{
     color: #ffffff;
     background-color: unset;
     font-weight: 700;
     font-size: 45px;
 }
+/* El boton con el enlace */
 .boton-inicio{
     font-size: 2rem;
     color: white;
@@ -220,35 +224,71 @@ section.contenedor div.card-presentacion h2{
 
 /* -------------------------------- */
 
-/* --------------FOOTER------------- */
-footer{
-    border-top: 2px solid #000000;
-    text-align: center;
-}
-footer p{
-    color: var(--color-texto);
-}
+/* --------------footer------------ */
 
-footer h2{
-    background-color: var(--color-principal);
-    color: #000000;
-    font-size: 35px;
-    padding: 2px;
-}
-/* Los enlaces de Redes Sociales en logotipos */
-footer div{
+/* -------------------------------- */
+
+/* ---------------FOOTER MEJORADO----------------- */
+/* footer completo */
+footer{
+    background-color: #eeecec;
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    border-top:#000000 solid 5px;
+    text-align: center;
 }
-footer div a img{
-    width: 60px;
-    height: 60px;
+/* contenedor */
+.mejorado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: #000000 solid 3px;
 }
-/* ------------------------- */
+/* titulo */
+footer div.mejorado div.titulo-rs h2{
+    background-color: #eeecec;
+    color: #000000;
+    padding: 0;
+    font-weight: 800;
+}
+footer div.mejorado div.titulo-rs p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #8b8b8b;
+}
+footer p{
+    padding: 7px;
+    color: #8b8b8b;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.titulo-rs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.item-rs{
+    padding: 7px;
+    border-radius: 25px;
+}
+.ig{
+    background: linear-gradient(160deg, #FCAF45, #E1306C, #405DE6);
+}
+.x{
+    background-color: #000000;
+}
+.yt{
+    background-color: #ff0000;
+}
+/* ----------------------------------------------- */
 
 /*----------------NAVBAR------------------- */
 /* El navbar completo */
@@ -258,15 +298,16 @@ footer div a img{
 }
 /* El contenedor del navbar */
 .container-fluid{
-    background-color: var(--color-fondo2);
+    background:linear-gradient(to right, #179ef8, #0043a7) ;
     justify-content: space-between;
 }
 /* El logo */
 .navbar-brand{
     font-size: 2rem;
     font-family: "Urbanist", sans-serif;
+    font-weight: 700;
     color: var(--color-texto);
-    background-color: var(--color-principal);
+    background-color: #0345d3;
     padding: 20px;
     border-radius: 11px;
 }
@@ -287,6 +328,10 @@ footer div a img{
 .dropdown-menu{
     background-color: #bddeff;
 }
+/* Los links */
+.nav-link{
+    color:#e0e0e0;
+}
 .nav-link:hover{
     box-shadow: 0 2px 5px black;
     border-radius: 7px;
@@ -294,13 +339,16 @@ footer div a img{
 /* ---------------------------------------- */
 
 /* -------------GALERIA DE FOTOS----------- */
+/* El contenedor de la galeria */
 .galeria {
     max-width: 100%;
     margin: 0 auto;
 }
+/* El carrusel con la galeria dentro */
 .carousel{
     padding: 1.5rem;
 }
+/* Las imagenes */
 .img-gal{
     height: 380px;
     width: 150px;
@@ -308,7 +356,7 @@ footer div a img{
     object-position: center;
     border-radius: 10px;
 }
-
+/* Los nombres de los paises */
 h5{
     font-size: 2.5rem;
 }
@@ -326,26 +374,31 @@ h5{
     background-color: var(--color-fondo2);
     font-size: 20px;
 }
+/* El borde de las preguntas */
 .accordion-item{
     border: #000000 solid 3px;
     background-color: var(--color-principal);
 }
+/* La sección completa */
 .preguntas{
     background: var(--color-principal);
 }
+/* Las palabras importantes */
 .black{
     color:#1a1919;
 }
 /* ----------------------------------------- */
 
 /* ------------Tarjetas de servicios----------*/
-
+/* El título y su texto */
 .align{
     text-align: center;
 }
+/* El título */
 main section div.align h2{
     font-size: 50px;
 }
+/* El artículo con las tarjetas dentro */
 .caja-servi{
     display:flex;
     flex-direction: row;
@@ -353,6 +406,7 @@ main section div.align h2{
     gap: 2rem;
     flex-wrap: wrap;
 }
+/* La tarjeta completa */
 .card{
     border:#000000 solid 3px;
 }
@@ -360,20 +414,22 @@ main section div.align h2{
     box-shadow: 0 2px 5px #000000;
     border:#050397 solid 3px;
 }
+/* El cuerpo de las tarjetas */
 .card-body{
     background-color: #3a61fd; 
 }
+/* El texto de las cards */
 .card-text{
     font-size: 20px;
     font-weight: 400;
     color: var(--color-texto);
 }
-
+/* Título de las cards */
 .card-title{
     text-align: center;
     color: var(--color-texto);
 }
-
+/* El header de la tarjeta */
 .card-header{
     text-align: center;
     font-size: 25px;
