@@ -26,12 +26,13 @@
 /* --------------GENERALES------------ */
 body{
     background-color: var(--color-fondo);
-    color:var(--color-texto);
+    color: var(--color-texto);
     font-family: "Outfit", sans-serif;
 }
 p{
     font-size: 20px;
     font-weight: 300;
+    color: #ebe3e3;
 }
 header, footer{
     background-color:var(--color-fondo2);
@@ -42,12 +43,13 @@ a{
 }
 
 h2{
-    font-size: 30px;
-    background-color:var(--color-principal);
+    font-size: 35px;
+    font-weight: 700;
     padding:5px;
     font-family: "Urbanist", sans-serif;
     text-align: center;
     border-radius: 15px;
+    color: white;
 }
 
 /* --------------HEADER------------- */
@@ -129,9 +131,13 @@ main{
 /* ------------------------- */
 section{
     margin: 1rem;
-    background-color: var(--color-tarjetas);
+    background: linear-gradient(160deg, #4340ec, #0d075c);
     border: #000000 solid 3px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 main section div p{
@@ -150,6 +156,7 @@ section div article ul.lista{
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
+    color: white;
 }
 /* Visual de las imagenes */
 figure{
@@ -157,10 +164,13 @@ figure{
 }
 figcaption{
     font-size: 25px;
+    color: #e6e0e0;
 }
 img{
     border-radius: 20px;
-
+}
+.imagen{
+    max-width: 400px;
 }
 /* ----------------*/
 .preguntas{
@@ -181,6 +191,7 @@ strong{
 }
 .inicio-text{
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .letras{
@@ -196,7 +207,7 @@ section.contenedor div.card-presentacion h2{
     font-size: 45px;
 }
 .boton-inicio{
-    font-size: 30px;
+    font-size: 2rem;
     color: white;
     background-color: #3772FF;
     padding: 1rem;
@@ -214,8 +225,13 @@ footer{
     border-top: 2px solid #000000;
     text-align: center;
 }
+footer p{
+    color: var(--color-texto);
+}
+
 footer h2{
     background-color: var(--color-principal);
+    color: #000000;
     font-size: 35px;
     padding: 2px;
 }
@@ -309,6 +325,16 @@ h5{
 .bg-desc{
     background-color: var(--color-fondo2);
     font-size: 20px;
+}
+.accordion-item{
+    border: #000000 solid 3px;
+    background-color: var(--color-principal);
+}
+.preguntas{
+    background: var(--color-principal);
+}
+.black{
+    color:#1a1919;
 }
 /* ----------------------------------------- */
 
