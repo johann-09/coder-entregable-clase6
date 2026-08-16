@@ -299,6 +299,9 @@ footer p{
     padding: 7px;
     border-radius: 25px;
 }
+.item-rs:hover{
+    box-shadow: 0 1px 5px #020202;
+}
 /* imagenes */
 .image-tam{
     width: 60px;
@@ -307,11 +310,17 @@ footer p{
 .ig{
     background: linear-gradient(160deg, #FCAF45, #E1306C, #405DE6);
 }
+.ig:hover{
+    background: linear-gradient(160deg, #f19a1f, #e01559, #1f40e2);
+}
 .x{
     background-color: #000000;
 }
 .yt{
     background-color: #ff0000;
+}
+.yt:hover{
+    background-color: #ce0808;
 }
 /* ----------------------------------------------- */
 
