@@ -464,6 +464,62 @@ main section div.align h2{
 }
 /* ------------------------------------------ */
 
+/* -------------BOTONES DE CONTACTO----------- */
+/* Caja de los botones */
+.contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+/* imagenes */
+.size-image{
+    width: 70px;
+    height: 70px;
+}
+/* contenedor de las imagenes */
+.button-contacto{
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: #000000 solid 3px;
+}
+/* Whatsapp */
+.ws{
+    background-color: #25d366;
+}
+.ws:hover{
+    background-color: #1fc75d;
+    box-shadow: 0 2px 5px black;
+}
+/* Instagram */
+.ig2{
+    background: linear-gradient(160deg, #FCAF45, #E1306C, #405DE6);
+}
+.ig2:hover{
+    background: linear-gradient(160deg, #e29427, #c41e55, #263fbe);
+    box-shadow: 0 2px 5px black;
+}
+/* Youtube */
+.yt2{
+    background-color: #ff0000;
+}
+.yt2:hover{
+    box-shadow: 0 2px 5px black;
+    background-color: #c40606;
+}
+/* Gmail */
+.gm{
+    background-color: #ffffff;
+}
+.gm:hover{
+    background-color: #e9e7e7;
+    box-shadow: 0 2px 5px black;
+}
+/* ------------------------------------------- */
+
 /* TRANSFORMACION DE PANTALLAS */
 
 /* Tablets */
