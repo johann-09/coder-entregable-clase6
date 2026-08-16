@@ -224,8 +224,16 @@ section.contenedor div.card-presentacion h2{
 
 /* -------------------------------- */
 
-/* --------------footer------------ */
-
+/* --------------FOOTER------------ */
+/* Los enlaces de Redes Sociales en logotipos */
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 /* -------------------------------- */
 
 /* ---------------FOOTER MEJORADO----------------- */
@@ -237,9 +245,9 @@ footer{
     justify-content: center;
     align-items: center;
     border-top:#000000 solid 5px;
-    text-align: center;
+    padding: 0;
 }
-/* contenedor */
+/* Contenedor */
 .mejorado{
     display: flex;
     flex-direction: row;
@@ -247,37 +255,54 @@ footer{
     justify-content: center;
     gap: 2rem;
     border-bottom: #000000 solid 3px;
+    padding: 1.5rem;
 }
-/* titulo */
+/* Título */
 footer div.mejorado div.titulo-rs h2{
     background-color: #eeecec;
     color: #000000;
     padding: 0;
     font-weight: 800;
 }
+/* Párrafo arriba del título */
 footer div.mejorado div.titulo-rs p{
+    padding: 0;
+    margin-bottom:6px;
     font-size: 20px;
+    letter-spacing: 2px;
     font-weight: 600;
     color: #8b8b8b;
 }
+/* Los derechos */
 footer p{
+    margin: 7px;
     padding: 7px;
     color: #8b8b8b;
 }
+/* Caja de los links */
 .redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
 }
+/* Caja del título */
 .titulo-rs{
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
 }
+/* item de link */
 .item-rs{
     padding: 7px;
     border-radius: 25px;
+}
+/* imagenes */
+.image-tam{
+    width: 60px;
+    height: 60px;
 }
 .ig{
     background: linear-gradient(160deg, #FCAF45, #E1306C, #405DE6);
